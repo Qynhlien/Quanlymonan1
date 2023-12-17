@@ -17,6 +17,7 @@ namespace DAL
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
              
+                //GET
                 //Get thông tin
                 connection.Open();
                 SqlCommand cmd = new SqlCommand("SELECT DH.IDKhachhang, TTKH.HoTen AS HoTenKhachHang, TTKH.Diachi AS DiaChiKhachHang, SUM(DH.Tongdonhang) AS TongDonHangKhachHang FROM DonHang DH JOIN ThongtinKhachHang TTKH ON DH.IDKhachhang = TTKH.IDKhachHang GROUP BY DH.IDKhachhang, TTKH.HoTen, TTKH.Diachi", connection);
