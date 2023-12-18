@@ -41,6 +41,8 @@ namespace Quanlymonan1
             this.button3 = new System.Windows.Forms.Button();
             this.qLYBANHANGDataSet = new Quanlymonan1.QLYBANHANGDataSet();
             this.DGVChiTietDonHang = new System.Windows.Forms.DataGridView();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewChiTiet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLYBANHANGDataSet)).BeginInit();
@@ -70,7 +72,7 @@ namespace Quanlymonan1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.label1.Location = new System.Drawing.Point(320, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 22);
@@ -81,7 +83,7 @@ namespace Quanlymonan1
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.label2.Location = new System.Drawing.Point(376, 25);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 22);
@@ -92,7 +94,7 @@ namespace Quanlymonan1
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label3.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.label3.Location = new System.Drawing.Point(465, 25);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(179, 22);
@@ -104,7 +106,7 @@ namespace Quanlymonan1
             this.dataGridViewChiTiet.AllowUserToOrderColumns = true;
             this.dataGridViewChiTiet.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dataGridViewChiTiet.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewChiTiet.Location = new System.Drawing.Point(316, 122);
+            this.dataGridViewChiTiet.Location = new System.Drawing.Point(324, 190);
             this.dataGridViewChiTiet.Name = "dataGridViewChiTiet";
             this.dataGridViewChiTiet.RowHeadersWidth = 51;
             this.dataGridViewChiTiet.RowTemplate.Height = 24;
@@ -115,8 +117,8 @@ namespace Quanlymonan1
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label4.Location = new System.Drawing.Point(317, 52);
+            this.label4.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label4.Location = new System.Drawing.Point(317, 55);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(307, 37);
             this.label4.TabIndex = 5;
@@ -155,7 +157,7 @@ namespace Quanlymonan1
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(100, 36);
             this.button3.TabIndex = 9;
-            this.button3.Text = "QLKH";
+            this.button3.Text = "Back";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -168,12 +170,34 @@ namespace Quanlymonan1
             // 
             this.DGVChiTietDonHang.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.DGVChiTietDonHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVChiTietDonHang.Location = new System.Drawing.Point(317, 361);
+            this.DGVChiTietDonHang.Location = new System.Drawing.Point(324, 503);
             this.DGVChiTietDonHang.Name = "DGVChiTietDonHang";
             this.DGVChiTietDonHang.RowHeadersWidth = 51;
             this.DGVChiTietDonHang.RowTemplate.Height = 24;
             this.DGVChiTietDonHang.Size = new System.Drawing.Size(880, 242);
             this.DGVChiTietDonHang.TabIndex = 10;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label5.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label5.Location = new System.Drawing.Point(331, 155);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(85, 22);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Đơn hàng";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label6.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label6.Location = new System.Drawing.Point(331, 469);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(144, 22);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Chi tiết đơn hàng";
             // 
             // CHITIETQLKH
             // 
@@ -182,6 +206,8 @@ namespace Quanlymonan1
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(1264, 1055);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.DGVChiTietDonHang);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -218,5 +244,7 @@ namespace Quanlymonan1
         private System.Windows.Forms.Button button3;
         private QLYBANHANGDataSet qLYBANHANGDataSet;
         private System.Windows.Forms.DataGridView DGVChiTietDonHang;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }
